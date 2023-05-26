@@ -42,6 +42,7 @@ class CreateGroup extends Component
         $validatedData = $this->validate();
 
         AttributeValue::create($validatedData);
+        $this->emit('refreshComponent');
         $this->doClose();
         $this->resetInputFields();
     }
@@ -54,6 +55,6 @@ class CreateGroup extends Component
     public function render()
     {
         $attributes= Attribute::all();
-        return view('livewire.create-group');
+        return view('livewire.create-group',compact('attributes'));
     }
 }

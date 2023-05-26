@@ -40,7 +40,7 @@
                     <div class="col-xs-12 col-sm-12 col-md-7">
                         <div class="form-group">
                             <strong>Description:</strong><span class="text-danger">*</span>
-                            <input type="text" name="description" class="form-control" wire:model="description" placeholder="Name of the item"
+                            <input type="text" name="description" class="form-control" wire:model="description" placeholder="Description"
                                    required>
                         </div>
                     </div>
